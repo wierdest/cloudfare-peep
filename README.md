@@ -1,0 +1,1 @@
+# puppeteer bot to log cloudfare challenge requests for easier inspection

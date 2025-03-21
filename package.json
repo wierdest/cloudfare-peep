@@ -1,0 +1,17 @@
+{
+  "name": "cloudfare-peep",
+  "version": "1.0.0",
+  "main": "cloudfare-peep.js",
+  "scripts": {
+    "start": "node cleanup.js && node cloudfare-peep.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "puppeteer": "^24.4.0"
+  }
+}
