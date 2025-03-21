@@ -26,10 +26,10 @@ async function peep() {
             const contentType = response.headers()['content-type']
             let logData = `Cloudflare Response URL: ${response.url()}\n`
 
-            if (contentType && contentType.includes('application/json')) {
+            if (contentType.includes('application/json')) {
                 const jsonResponse = await response.json()
                 logData += `Response JSON Payload: ${JSON.stringify(jsonResponse, null, 2)}\n`
-            } else if (contentType && contentType.includes('text/html')) {
+            } else if (contentType.includes('text/html')) {
                 const textResponse = await response.text()
                 logData += `Response HTML Payload: ${textResponse}\n`
             }
